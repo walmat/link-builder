@@ -18,7 +18,7 @@ After completing that, copy the token (you might have to click to reveal it) for
 
 ## Deployment
 
-Once you have the `config.json` file finished, simply (if you're navigated into the `link-builder` folder already)
+Once you have the `config.json` file finished, and if you're navigated into the `link-builder` folder already, simply
 run `node index.js`. This will start the bot for you.
 
 ## Usage
@@ -26,13 +26,13 @@ run `node index.js`. This will start the bot for you.
 You can choose to setup a given channel for this, but I won't go into all that babysitting here. To run the link builder,
 simple type: `$build <link to product>`
 
-For example, this will build the checkout links for [NIKE X ACRONYM AIR VAPORMAX FK MOC 2](https://kith.com/collections/footwear/products/nkaq0996-102)..
+For example, this will build the checkout links for [NIKE X ACRONYM AIR VAPORMAX FK MOC 2](https://kith.com/collections/footwear/products/nkaq0996-102)
 
 `$build https://kith.com/collections/footwear/products/nkaq0996-102`
 
 ## Authors
 
-**Matthew Wall (me)** - [PurpleBooth](https://github.com/walmat)
+**Matthew Wall (me)** - [walmat](https://github.com/walmat)
 
 ## License
 
