@@ -19,19 +19,20 @@ client.on("message", async message => {
     if(command === "build") {
         args.forEach(link => {
 
-            link_builder.build(link, userAgent, (err, title, links, color) => {
+            link_builder.build(link, userAgent, (err, title, links, img, color) => {
 
-                message.channel.send(msg(title, links, color));
+                message.channel.send(msg(title, links, img, color));
             });
 
         });
     }
 });
 
-function msg(title, links, color) {
+function msg(title, links, img, color) {
     return new Discord.RichEmbed()
         .setAuthor(title)
         .setDescription(links)
+        .setThumbnail(img.toString())
         .setTimestamp(new Date().toISOString())
         .setColor(color)
         .setFooter('Nebula © 2018', 'https://cdn.discordapp.com/embed/avatars/0.png');

@@ -6,6 +6,7 @@ link_builder.build = function(url, userAgent, callback) {
 
     let links = [];
     let title = [];
+    let img = [];
 
     request({
         method: 'get',
@@ -22,15 +23,19 @@ link_builder.build = function(url, userAgent, callback) {
             links.push(atclink);
         });
         let name = (`${json.product.title}`);
-        title.push(name);
+        let picture = (`${json.product.image.src}`);
 
-        return callback(null, title, links, '#648767');
+        title.push(name);
+        img.push(picture);
+
+
+        return callback(null, title, links, img, '#648767');
 
     }).catch(function (e) {
         title.push('N/A');
         links.push('Unable to find variants for that item');
 
-        return callback(e, title, links, '#A3333D');
+        return callback(e, title, links, null, '#A3333D');
 
     });
 };
