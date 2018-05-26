@@ -21,14 +21,14 @@ client.on("message", async message => {
 
             link_builder.build(link, userAgent, (err, title, links, color) => {
 
-                message.channel.send(sendLinks(title, links, color));
+                message.channel.send(msg(title, links, color));
             });
 
         });
     }
 });
 
-function sendLinks(title, links, color) {
+function msg(title, links, color) {
     return new Discord.RichEmbed()
         .setAuthor(title)
         .setDescription(links)

@@ -12,6 +12,6 @@
   "dependencies": {
     "discord.js": "^11.3.2",
     "request": "^2.83.0",
-    "request-promise": "^4.2.2",
+    "request-promise": "^4.2.2"
   }
 }
