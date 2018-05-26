@@ -36,5 +36,5 @@ For example, this will build the checkout links for [NIKE X ACRONYM AIR VAPORMAX
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](LICENSE) file for details
 
