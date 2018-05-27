@@ -16,32 +16,40 @@ client.on("message", async message => {
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
-    if(command === "build") {
+    switch(message.channel.name) {
+        case "link-builder": {
+            if(command === "build") {
 
-        //clear the command
-        const fetched = await message.channel.fetchMessages({count: 1});
-        message.delete(fetched)
-            .catch(error => message.send(`Couldn't delete messages because of: ${error}`));
+                //clear the command
+                const fetched = await message.channel.fetchMessages({count: 1});
+                message.delete(fetched)
+                    .catch(error => message.send(`Couldn't delete messages because of: ${error}`));
 
-        args.forEach(link => {
+                args.forEach(link => {
 
-            link_builder.build(link, userAgent, (err, title, links, img, color) => {
+                    link_builder.build(link, userAgent, (err, title, links, img, color) => {
 
-                message.channel.send(msg(title, links, img, color));
-            });
+                        message.channel.send(msg(title, links, img, color));
+                    });
 
-        });
+                });
+            }
+            break;
+        }
     }
 });
 
 function msg(title, links, img, color) {
+
+    if (img === null) img = 'https://cdn.discordapp.com/embed/avatars/0.png';
+
     return new Discord.RichEmbed()
         .setAuthor(title)
         .setDescription(links)
         .setThumbnail(img.toString())
         .setTimestamp(new Date().toISOString())
         .setColor(color)
-        .setFooter('Nebula © 2018', 'https://cdn.discordapp.com/embed/avatars/0.png');
+        .setFooter('announceus.io', 'https://thumb.ibb.co/gVoAqo/h5_G8_R3o_Z_400x400.jpg%27');
 }
 
 client.login(config.token);
