@@ -49,7 +49,7 @@ function msg(title, links, img, color) {
         .setThumbnail(img.toString())
         .setTimestamp(new Date().toISOString())
         .setColor(color)
-        .setFooter('announceus.io', 'https://thumb.ibb.co/gVoAqo/h5_G8_R3o_Z_400x400.jpg%27');
+        .setFooter('Nebula © 2018', 'https://cdn.discordapp.com/embed/avatars/0.png');
 }
 
 client.login(config.token);
