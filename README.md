@@ -13,6 +13,8 @@ This project builds checkout links given a product link. It's directly integrate
 If you don't already have a custom bot setup for your server, navigate [here](https://discordapp.com/developers/applications/me) and go through the necessary steps in order to setup
 a bot for your server.
 
+<img src="git-pics/landing screen.png" />
+
 After completing that, copy the token (you might have to click to reveal it) for your bot and paste it in `config.json`
 
 
