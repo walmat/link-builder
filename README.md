@@ -16,31 +16,31 @@ If you don't already have `Node` installed, head [here](https://nodejs.org/) and
 
 If you don't already have a custom bot setup for your server, navigate [here](https://discordapp.com/developers/applications/me). You should see a similar screen as below once you're logged in.
 
-<img src="git-pics/landing screen.png" />
+<img src="_assets/git-pics/landing screen.png" />
 
 If you don't already have a bot, click `New App`. You should be redirected to the screen below.
 
-<img src"git-pics/1.png" />
+<img src"_assets/git-pics/1.png" />
 
 On this screen, go ahead and give your bot a name (description and picture are optional, and can be changed later if you decide you want to add either). Click `Create App` to continue.
 
-<img src="git-pics/2.png" />
+<img src="_assets/git-pics/2.png" />
 
 You'll see the screen above once your `App has been created`. Here we'll need to do a couple things. First things first,
 copy the `Client ID` under `App Details`, open up a new tab, and navigate to `https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID_HERE&scope=bot`
 making sure to replace `YOUR_CLIENT_ID_HERE` with the Client ID of your new application. (e.g. – for my application,
 the url looks like this: `https://discordapp.com/oauth2/authorize?client_id=451028967781040129&scope=bot`).
 
-<img src="git-pics/5.png" />
+<img src="_assets/git-pics/5.png" />
 
 Select the server you want to add the bot to, and click `Authorize`. You can close that page now. Let's head back to the
 tab where we're setting up our bot. Scroll to the bottom of the page, and you should see the below screen.
 
-<img src="git-pics/3.png" />
+<img src="_assets/git-pics/3.png" />
 
 Click on the button `Create a Bot User` and `Yes, do it!`.
 
-<img src="git-pics/4.png" />
+<img src="_assets/git-pics/4.png" />
 
 Refer to the above screenshot, but we're almost done setting up the pre-requisites. Check the box next to `Public Bot`,
 and click to reveal your `token`. *Keep this safe and don't share it with anyone!!*
@@ -72,7 +72,7 @@ https://kith.com/collections/footwear/products/nkaq0996-102`)
 
 ## Authors
 
-**Matthew Wall (me)** - [walmat](https://github.com/walmat)
+**Matthew Wall @ Nebula <img src="_assets/logo.png" />** - [walmat](https://github.com/walmat)
 
 <a href="https://www.buymeacoffee.com/nebula" target="_blank">
     <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
