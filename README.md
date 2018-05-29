@@ -1,6 +1,6 @@
 # Shopify Link Builder
 
-This project builds checkout links given a product link. It's directly integrated into your choice of a discord server.
+A lightweight checkout link builder given product(s) link. Supports direct integration into [Discord](https://discordapp.com).
 
 ## Getting Started
 
