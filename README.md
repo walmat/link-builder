@@ -2,9 +2,9 @@
   <br>
   <a href="http://bot-nebula.herokuapp.com"><img src="_assets/logo.png" alt="Nebula" width="200"></a>
   <br>
+  Shopify Link Builder
+  <br>
 </h1>
-
-# Shopify Link Builder
 
 A lightweight checkout link builder given product(s) link. Supports direct integration into [Discord](https://discordapp.com).
 
@@ -78,7 +78,7 @@ https://kith.com/collections/footwear/products/nkaq0996-102`)
 
 ## Authors
 
-**Matthew Wall** - [walmat](https://github.com/walmat)
+**Matthew Wall – @walmat#5572 ** - [walmat](https://github.com/walmat)
 
 <a href="https://www.buymeacoffee.com/nebula" target="_blank">
     <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
