@@ -4,24 +4,58 @@ This project builds checkout links given a product link. It's directly integrate
 
 ## Getting Started
 
+(On Windows I like to use the Linux Terminal Emulator [Cmder](http://cmder.net))
+
 1. `git clone https://github.com/walmat/link-builder.git`
 2. `cd link-builder`
-3. `npm install` or `npm i` for all you shortcut junkies
+3. `npm install` (or `npm i` for all you shortcut junkies)
 
 ### Prerequisites
 
-If you don't already have a custom bot setup for your server, navigate [here](https://discordapp.com/developers/applications/me) and go through the necessary steps in order to setup
-a bot for your server.
+If you don't already have `Node` installed, head [here](https://nodejs.org/) and install the stable copy for your OS.
+
+If you don't already have a custom bot setup for your server, navigate [here](https://discordapp.com/developers/applications/me). You should see a similar screen as below once you're logged in.
 
 <img src="git-pics/landing screen.png" />
 
-After completing that, copy the token (you might have to click to reveal it) for your bot and paste it in `config.json`
+If you don't already have a bot, click `New App`. You should be redirected to the screen below.
 
+<img src"git-pics/1.png />
+
+On this screen, go ahead and give your bot a name (description and picture are optional, and can be changed later if you decide you want to add either). Click `Create App` to continue.
+
+<img src="git-pics/2.png" />
+
+You'll see the screen above once your `App has been created`. Here we'll need to do a couple things. First things first,
+copy the `Client ID` under `App Details`, open up a new tab, and navigate to `https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID_HERE&scope=bot`
+making sure to replace `YOUR_CLIENT_ID_HERE` with the Client ID of your new application. (e.g. – for my application,
+the url looks like this: `https://discordapp.com/oauth2/authorize?client_id=451028967781040129&scope=bot`).
+
+<img src="git-pics/5.png" />
+
+Select the server you want to add the bot to, and click `Authorize`. You can close that page now. Let's head back to the
+tab where we're setting up our bot. Scroll to the bottom of the page, and you should see the below screen.
+
+<img src="git-pics/3.png" />
+
+Click on the button `Create a Bot User` and `Yes, do it!`.
+
+<img src="git-pics/4.png" />
+
+Refer to the above screenshot, but we're almost done setting up the pre-requisites. Check the box next to `Public Bot`,
+and click to reveal your `token`. *Keep this safe and don't share it with anyone!!*
+
+With that token, navigate to the project directory and open `config.json` in whatever text editor you prefer (I use [sublime](https://www.sublimetext.com)).
+Paste that token over the `PASTE_YOUR_TOKEN_HERE`. Save and close that file.
 
 ## Deployment
 
 Once you have the `config.json` file finished, and if you're navigated into the `link-builder` folder already, simply
 run `node index.js`. This will start the bot for you.
+
+### Developers
+
+If you want to further develop this project, please give credit where credit is due.
 
 ## Usage
 
@@ -35,6 +69,8 @@ For example, this will build the checkout links for [NIKE X ACRONYM AIR VAPORMAX
 ## Authors
 
 **Matthew Wall (me)** - [walmat](https://github.com/walmat)
+
+<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/nebula"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
 
 ## License
 
