@@ -64,8 +64,11 @@ simple type: `$build <link to product>`
 
 For example, this will build the checkout links for [NIKE X ACRONYM AIR VAPORMAX FK MOC 2](https://kith.com/collections/footwear/products/nkaq0996-102)
 
-`$build https://kith.com/collections/footwear/products/nkaq0996-102`. You can use as many links chained to one `$build`
-command too! (e.g. – `$build https://kith.com/collections/footwear/products/nkaq0996-102 https://kith.com/collections/footwear/products/nkaq0996-102 https://kith.com/collections/footwear/products/nkaq0996-102`)
+`$build https://kith.com/collections/footwear/products/nkaq0996-102`. You can use as many links chained (separated by a space of course) to one `$build`
+command too!
+(e.g. – `$build https://kith.com/collections/footwear/products/nkaq0996-102
+https://kith.com/collections/footwear/products/nkaq0996-102
+https://kith.com/collections/footwear/products/nkaq0996-102`)
 
 ## Authors
 
